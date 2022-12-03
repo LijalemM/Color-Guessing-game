@@ -1,0 +1,38 @@
+body {
+    background-color: antiquewhite;
+    margin: 5px;
+    border-color: black;
+    padding-top: 10px;
+    
+}
+h1{
+    color: black;
+    font-size: 40px;
+    font-style: oblique;
+    font-family: OCRAstd, monospace;
+    text-align: center;
+    padding-top: 5px;
+    border: 2px;
+}
+.container {
+    background-color: black;
+    margin: 5px;
+    width: 600px;
+    height: 300px;
+    padding: 5px;
+    margin-left: 350px;
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+.container div {
+    height:50px;
+    width:100px;
+    padding:5px;
+    margin: 2px;
+    border-radius:5px;
+    justify-content: space-around;
+    background-color: white;
+}
