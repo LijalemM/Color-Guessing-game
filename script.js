@@ -46,3 +46,13 @@ function guessComparation (){
 }
 addEventListener("load",generateRandomColor());
 
+function selectedCard(card){
+    let button = document.getElementById
+if(selected === card){
+    console.log("you win")
+}
+else{
+    console.log("sorry try again")
+}
+
+}
