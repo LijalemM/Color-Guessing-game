@@ -13,10 +13,11 @@ h1{
     text-align: center;
     padding-top: 5px;
     border: 2px;
+
 }
 .container {
     background-color: black;
-    margin: 5px;
+    margin: 10px;
     width: 600px;
     height: 300px;
     padding: 5px;
@@ -27,12 +28,100 @@ h1{
     justify-content: center;
     flex-wrap:wrap;
 }
-.container div {
-    height:50px;
-    width:100px;
-    padding:5px;
-    margin: 2px;
-    border-radius:5px;
-    justify-content: space-around;
-    background-color: white;
+
+.button{
+   
+    text-align: center;
+    font-size: xx-large;
+    width: 30%;
+    border-radius:5px 50% ;
+    padding: 5px;
+    margin: 7px;
+    
+}
+.button2 {
+    background-color:yellow;
+    color: black;
+    text-align: center;
+    font-size: xx-large;
+    border-radius:5px 50% ;
+    padding: 5px;
+    margin: 7px;
+}
+.button3 {
+    background-color:Red;
+    color: white;
+    text-align: center;
+    font-size: xx-large;
+    border-radius:5px 50% ;
+    padding: 5px;
+    margin: 7px;
+}
+.button4 {
+    background-color:Orange;
+    color: black;
+    text-align: center;
+    font-size: xx-large;
+    border-radius:5px 50%;
+    padding: 5px;
+    margin: 7px;
+}
+.button5 {
+    background-color:Blue;
+    color: white;
+    text-align: center;
+    font-size: xx-large;
+    border-radius:5px 50%;
+    padding: 5px;
+    margin: 7px;
+}
+.button6 {
+    background-color:Violet;
+    color: black;
+    text-align: center;
+    font-size: xx-large;
+    border-radius: 50% 5px;
+    padding: 5px;
+    margin: 7px;
+}
+.button7 {
+    background-color:Indigo;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    font-size: xx-large;
+    border-radius: 50% 5px;
+    padding: 5px;
+    margin: 7px;
+}
+.button8 {
+    background-color:silver;
+    color: black;
+    text-align: center;
+    display: inline-block;
+    font-size: xx-large;
+    border-radius: 50% 5px;
+    padding: 5px;
+    margin: 7px;
+}
+.button9 {
+    background-color:brown;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    font-size: xx-large;
+    border-radius: 50% 5px;
+    padding: 5px;
+    margin: 7px;
+    
+}
+.button1 {
+    background-color:gold;
+    color: black;
+    text-align: center;
+    display: inline-block;
+    font-size: xx-large;
+    border-radius: 50% 5px;
+    padding: 5px;
+    margin: 7px;
 }
