@@ -3,6 +3,7 @@ body {
     margin: 5px;
     border-color: black;
     padding-top: 10px;
+    text-align: center;
     
 }
 h1{
@@ -15,113 +16,56 @@ h1{
     border: 2px;
 
 }
+
 .container {
     background-color: black;
-    margin: 10px;
-    width: 600px;
-    height: 300px;
+    margin: auto;
+    width: 50%;
+    height: 350px;
     padding: 5px;
-    margin-left: 350px;
+    border: 5px solid;
+    text-align: left;
     align-self: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap:wrap;
+}
+.Button1 {
+    position: relative;
+    bottom: -40px;
+    right: 300px;
+    width: 10%;
+}
+#ListArray {
+    position: relative;
+    bottom: 300px;
+    left: 400px;
+    border: 2px;
+    width: 35%;
+    height: 10%;
+    font-weight: bold;
+    color: red;
+    font-size: large;
 }
 
-.button{
-   
-    text-align: center;
-    font-size: xx-large;
-    width: 30%;
-    border-radius:5px 50% ;
-    padding: 5px;
-    margin: 7px;
-    
-}
-.button2 {
-    background-color:yellow;
+#displayText{
+    position: relative;
+    bottom: -50px;
+    left: 200px;
+    height: 80%;
+    width: 20%;
+    font-size:large;
     color: black;
+    background-color:cadetblue;
+    font-weight: bold;
     text-align: center;
-    font-size: xx-large;
-    border-radius:5px 50% ;
-    padding: 5px;
-    margin: 7px;
 }
-.button3 {
-    background-color:Red;
-    color: white;
+#inputText{
+    position: relative;
+    height: 10%;
+    width: 40%;
+    bottom: 250px;
+    right: -10px;
+    color: red;
+    font-weight: bold;
     text-align: center;
-    font-size: xx-large;
-    border-radius:5px 50% ;
-    padding: 5px;
-    margin: 7px;
-}
-.button4 {
-    background-color:Orange;
-    color: black;
-    text-align: center;
-    font-size: xx-large;
-    border-radius:5px 50%;
-    padding: 5px;
-    margin: 7px;
-}
-.button5 {
-    background-color:Blue;
-    color: white;
-    text-align: center;
-    font-size: xx-large;
-    border-radius:5px 50%;
-    padding: 5px;
-    margin: 7px;
-}
-.button6 {
-    background-color:Violet;
-    color: black;
-    text-align: center;
-    font-size: xx-large;
-    border-radius: 50% 5px;
-    padding: 5px;
-    margin: 7px;
-}
-.button7 {
-    background-color:Indigo;
-    color: white;
-    text-align: center;
-    display: inline-block;
-    font-size: xx-large;
-    border-radius: 50% 5px;
-    padding: 5px;
-    margin: 7px;
-}
-.button8 {
-    background-color:silver;
-    color: black;
-    text-align: center;
-    display: inline-block;
-    font-size: xx-large;
-    border-radius: 50% 5px;
-    padding: 5px;
-    margin: 7px;
-}
-.button9 {
-    background-color:brown;
-    color: white;
-    text-align: center;
-    display: inline-block;
-    font-size: xx-large;
-    border-radius: 50% 5px;
-    padding: 5px;
-    margin: 7px;
-    
-}
-.button1 {
-    background-color:gold;
-    color: black;
-    text-align: center;
-    display: inline-block;
-    font-size: xx-large;
-    border-radius: 50% 5px;
-    padding: 5px;
-    margin: 7px;
+    font-size: large;
+
 }
