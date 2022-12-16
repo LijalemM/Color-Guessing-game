@@ -1,50 +1,64 @@
-let colors = ['Green','Yellow','Red','Orange','Blue','Violet','Indigo','Silver','Brown','Gold']
-let selected = [];
-let gameInput = " ";
-let gamerGuess = 0;
-let doneGussing = false;
+let colorArray =[0,1,2,3,4,5];
 
-// this function generate randum value from the color listed in the colors array 
-function generateRandomColor () {
-    selected = colors[Math.floor(Math.random()*colors.length)]
-    while (doneGussing !=true){
-        gameInput = prompt('Guess a Color from Listed below: \n' + colors )
+//These three variables generate the random RGB number values
+let red = Math.floor((Math.random()) * 256);
+let green = Math.floor((Math.random()) * 256);
+let blue = Math.floor((Math.random()) * 256);
+document.getElementById("colors_In_RGB").innerHTML = " Guess which box Matchs with This RGB Combination (" + red  + "," + green + "," + blue + ")";
 
-        gamerGuess +=1;
-        doneGussing = guessComparation ();
-    }
-    if (doneGussing){
-        //let displayer = document.getElementsByTagName("body");
-        //displayer.style.backgroundcolor === selected;
-        alert("Congratutlations You won the game!")
-    }
-}
-// this function compare the gamer input and the randomly generated color
-function guessComparation (){
 
-    if (colors.indexOf(gameInput) > -1){
+let reference = Math.floor((Math.random()) * 6);
+document.getElementById(reference).style.backgroundColor = " (" + red  + "," + green + "," + blue + ")";
+colorArray.splice(reference ,0);
 
-    if (gamerGuess > 3){
-        console.log("sorry your given trial is up")
-     }
-    else if (gameInput.length > selected.length){
-            alert ("Incorect Guess!\n" + " please try again! \n" + "Hint: My color words are shorter than your guess")
-            return false;
-        }
-    else if (gameInput.length < selected.length){
-            alert ("Incorect Guess! \n" + "please try again! \n" + "Hint: My color words are longer than your guess word number")
-            return false;
-        }
-    else if (gameInput = selected){
-            return true;
-        }
 
+let redA = Math.floor((Math.random()) * 256);
+let greenA = Math.floor((Math.random()) * 256);
+let blueA = Math.floor((Math.random()) * 256);
+document.getElementById(colorArray[0]).style.backgroundColor = " RGB(" + redA  + "," + greenA + "," + blueA + ")";
+
+let redB = Math.floor((Math.random()) * 256);
+let greenB = Math.floor((Math.random()) * 256);
+let blueB = Math.floor((Math.random()) * 256);
+document.getElementById(colorArray[1]).style.backgroundColor = " RGB(" + redB  + "," + greenB + "," + blueB + ")";
+
+let redC = Math.floor((Math.random()) * 256);
+let greenC = Math.floor((Math.random()) * 256);
+let blueC = Math.floor((Math.random()) * 256);
+document.getElementById(colorArray[2]).style.backgroundColor = " RGB(" + redC  + "," + greenC + "," + blueC + ")";
+
+let redD = Math.floor((Math.random()) * 256);
+let greenD = Math.floor((Math.random()) * 256);
+let blueD = Math.floor((Math.random()) * 256);
+document.getElementById(colorArray[3]).style.backgroundColor = " RGB(" + redD  + "," + greenD + "," + blueD + ")";
+
+let redE = Math.floor((Math.random()) * 256);
+let greenE = Math.floor((Math.random()) * 256);
+let blueE = Math.floor((Math.random()) * 256);
+document.getElementById(colorArray[4]).style.backgroundColor = " rgb(" + redE  + "," + greenE + "," + blueE + ")";
+
+let redF = Math.floor((Math.random()) * 256);
+let greenF = Math.floor((Math.random()) * 256);
+let blueF = Math.floor((Math.random()) * 256);
+document.getElementById(colorArray[5]).style.backgroundColor = " rgb(" + redF  + "," + greenF + "," + blueF + ")";
+
+function guess (){
+    if(document.activeElement.id==reference){
+        document.getElementById("colors_In_RGB").innerHTML ="That is the Correct Match!!" + "\n Congrats! You WON!!";
+        document.getElementById("colors_In_RGB").style.color = "Yellow";
     }
     else {
-        alert("I don't recognize this color! check the list again! ")
-        return false;
+        document.getElementById("colors_In_RGB").innerHTML = "Sorry Your Wrong! Reset and Try again!!";
+        document.getElementById("colors_In_RGB").style.color = "White";
     }
-
+    document.getElementsByClassName("button")[0].removeAttribute("onclick");
+    document.getElementsByClassName("button")[1].removeAttribute("onclick");
+    document.getElementsByClassName("button")[2].removeAttribute("onclick");
+    document.getElementsByClassName("button")[3].removeAttribute("onclick");
+    document.getElementsByClassName("button")[4].removeAttribute("onclick");
+    document.getElementsByClassName("button")[5].removeAttribute("onclick");
 }
-addEventListener("load",generateRandomColor());
 
+function Reset(){
+    window.location.reload();
+}
